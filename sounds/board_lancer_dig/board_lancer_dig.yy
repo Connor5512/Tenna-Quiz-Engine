@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"board_lancer_dig",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":7.0429025,
+  "exportDir":"",
+  "name":"board_lancer_dig",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"board_lancer_dig.ogg",
+  "volume":0.75,
+}

@@ -1,0 +1,1 @@
+old_sprite_index = sprite_index;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"deltarune_import_save",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deltarune_import_save",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Scripts/Misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

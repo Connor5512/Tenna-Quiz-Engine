@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_quiz_init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_quiz_init",
+  "parent":{
+    "name":"Quizes",
+    "path":"folders/Quizes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

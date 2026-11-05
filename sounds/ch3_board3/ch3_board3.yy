@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"ch3_board3",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":82.75864,
+  "exportDir":"",
+  "name":"ch3_board3",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"ch3_board3.ogg",
+  "volume":0.75,
+}

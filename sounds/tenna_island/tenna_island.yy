@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"tenna_island",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":150.85716,
+  "exportDir":"",
+  "name":"tenna_island",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"tenna_island.ogg",
+  "volume":0.75,
+}

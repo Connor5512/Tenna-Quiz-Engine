@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"board_4_challenge",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":52.093037,
+  "exportDir":"",
+  "name":"board_4_challenge",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"board_4_challenge.ogg",
+  "volume":0.75,
+}

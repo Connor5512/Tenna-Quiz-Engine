@@ -1,0 +1,1 @@
+draw_sprite_ext(spr_viginette, 0, 64, 32, 1, 1, 0, c_white, 1)
