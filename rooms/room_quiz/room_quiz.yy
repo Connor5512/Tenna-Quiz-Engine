@@ -64,8 +64,8 @@
   ],
   "name":"room_quiz",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"Quizes",
+    "path":"folders/Quizes.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

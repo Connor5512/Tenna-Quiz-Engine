@@ -23,3 +23,7 @@ if keyboard_check_pressed(vk_escape) and !instance_exists(obj_quitting_decal) {
 }
 
 //window_set_size(browser_width - 4, browser_height - 4);
+
+if keyboard_check_pressed(vk_control) {
+	instance_create_depth(0, 0, 0, obj_quiz_handler);
+}

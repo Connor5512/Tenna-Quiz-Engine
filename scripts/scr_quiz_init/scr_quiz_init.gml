@@ -2,7 +2,7 @@ function init_quizes() {
 	global.quizes = [ //add your quiz object into this array
 		obj_quiz1,
 		obj_quiz2,
-		obj_quiz3
+		//obj_quiz3
 	]
 
 	global.quiz_names = [];
