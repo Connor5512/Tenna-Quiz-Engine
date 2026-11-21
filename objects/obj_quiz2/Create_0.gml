@@ -1,5 +1,5 @@
-bank_name = "Quiz Template";
-author = "";
+bank_name = "Untitled Quiz";
+__author = "";
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -12,26 +12,14 @@ setup = false;
 
 questions = [
 	{
-		option1 : "Correct",
-		option2 : "Correct",
-		option3 : "Incorrect",
-		option4 : "Incorrect",
+		option1 : "Option 1",
+		option2 : "Option 2",
+		option3 : "Option 3",
+		option4 : "Option 4",
 		
-		correct : 12,
+		correct : 0,
 		
-		text : "Question 1 Text.",
-		
-		decal : spr_blank
-	},
-	{
-		option1 : "Incorrect",
-		option2 : "Incorrect",
-		option3 : "Correct",
-		option4 : "Correct",
-		
-		correct : 34,
-		
-		text : "Question 2 Text.",
+		text : "Question text.",
 		
 		decal : spr_blank
 	}

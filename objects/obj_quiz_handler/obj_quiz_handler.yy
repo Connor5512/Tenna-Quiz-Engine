@@ -9,8 +9,8 @@
   "name":"obj_quiz_handler",
   "overriddenProperties":[],
   "parent":{
-    "name":"Quizes",
-    "path":"folders/Quizes.yy",
+    "name":"Quiz Maker",
+    "path":"folders/Quizes/Quiz Maker.yy",
   },
   "parentObjectId":null,
   "persistent":false,

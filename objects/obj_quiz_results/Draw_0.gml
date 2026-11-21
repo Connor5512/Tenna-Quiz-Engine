@@ -45,8 +45,8 @@ if shown_answers < global.current_quiz_questions {
 		correct_answers++;
 	}
 	
-	show_debug_message("shown_answers : " + string(shown_answers));
-	show_debug_message("global.current_quiz_questions : " + string(global.current_quiz_questions));
+	debug_message(object_index, id, "shown_answers : " + string(shown_answers));
+	debug_message(object_index, id, "global.current_quiz_questions : " + string(global.current_quiz_questions));
 	timer = 15;
 } else {
 	if state != results_states.calculating && !(drumroll_started) {

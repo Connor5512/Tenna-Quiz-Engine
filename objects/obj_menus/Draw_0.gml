@@ -9,7 +9,8 @@ if page == menu_pages.home {
 	for (var i = 0; i < quizes; i++) {
 		draw_text(_x, start + i*gap, global.quiz_names[i]);
 	}
-	draw_text(_x, start + quizes*gap, "QUIT");
+	draw_text(_x, start + quizes*gap, "QUIZ MAKER");
+	draw_text(_x, start + (quizes+1)*gap, "QUIT");
 } else if page == menu_pages.options {
 	draw_set_halign(fa_center);
 	draw_text((room_width/2), 180, "BACK");

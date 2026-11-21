@@ -1,10 +1,21 @@
 function set_options(quiz_object, option1, option2, option3, option4, correct, question, decal = spr_blank){
-	layer_text_text(global.option1, string_upper(option1));
-	layer_text_text(global.option2, string_upper(option2));
-	layer_text_text(global.option3, string_upper(option3));
-	layer_text_text(global.option4, string_upper(option4));
+	layer_text_text(global.option1, string_upper(questions[current].option1));
+	layer_text_text(global.option2, string_upper(questions[current].option2));
+	layer_text_text(global.option3, string_upper(questions[current].option3));
+	layer_text_text(global.option4, string_upper(questions[current].option4));
 	obj_quiz_questionbox.question = string_upper(question);
 	quiz_object.decal = decal;
+	
+	var limit = 146;
+	for (var i = 0; i < 4; i++) {
+		var option_text = variable_struct_get(questions[current], "option" + string(i+1));
+		var label = variable_global_get("option" + string(i+1));
+		if string_width(option_text) >= 146 {
+			layer_text_xscale(label, (limit-2)/string_width(option_text));
+		} else {
+			layer_text_xscale(label, 1);
+		}
+	}
 	
 	quiz_object.correct_answers = [];
 	for (var i = 0; i < string_length(correct); i++) {
@@ -17,6 +28,7 @@ function innit_options() {
 	var optiontext_x = 110;
 	var optiontext_starty = 94;
 	var optiontext_spacing = 13;
+	
 	global.option1 = layer_text_create(layer_get_id("Text"), optiontext_x, optiontext_starty, fnt_8bit, "");
 	global.option2 = layer_text_create(layer_get_id("Text"), optiontext_x, optiontext_starty + (1 * optiontext_spacing), fnt_8bit, "");
 	global.option3 = layer_text_create(layer_get_id("Text"), optiontext_x, optiontext_starty + (2 * optiontext_spacing), fnt_8bit, "");

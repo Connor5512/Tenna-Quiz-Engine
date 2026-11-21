@@ -39,6 +39,6 @@ if (bouncing) {
 	}
 	image_xscale = scale - (bounce_intensity * 0.1)
 	image_yscale = scale + (bounce_intensity * 0.1)
-	show_debug_message(bounce_intensity);
-	show_debug_message(bounce_change);
+	debug_message(object_index, id, bounce_intensity);
+	debug_message(object_index, id, bounce_change);
 }

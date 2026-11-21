@@ -15,28 +15,6 @@ if current < array_length(questions) {
 	
 		questions[current].decal
 	)
-	
-	var limit = 146;
-	if string_width(questions[current].option1) >= 146 {
-		layer_text_xscale(global.option1, (limit-2)/string_width(questions[current].option1));
-	} else {
-		layer_text_xscale(global.option1, 1);
-	}
-	if string_width(questions[current].option2) >= 146 {
-		layer_text_xscale(global.option2, (limit-2)/string_width(questions[current].option2));
-	} else {
-		layer_text_xscale(global.option2, 1);
-	}
-	if string_width(questions[current].option3) >= 146 {
-		layer_text_xscale(global.option3, (limit-2)/string_width(questions[current].option3));
-	} else {
-		layer_text_xscale(global.option3, 1);
-	}
-	if string_width(questions[current].option4) >= 146 {
-		layer_text_xscale(global.option4, (limit-2)/string_width(questions[current].option4));
-	} else {
-		layer_text_xscale(global.option4, 1);
-	}
 } else {
 	if !(start_results) {
 		start_results = true;

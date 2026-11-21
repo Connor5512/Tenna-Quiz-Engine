@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"TV_GAME",
   "parent":{
-    "name":"Music",
-    "path":"folders/Music.yy",
+    "name":"Quizes",
+    "path":"folders/Quizes.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

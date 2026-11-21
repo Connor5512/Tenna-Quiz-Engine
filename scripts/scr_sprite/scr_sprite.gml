@@ -11,17 +11,17 @@ function sprite_get_texturegroup(sprite) {
 	}
 }
 
-function sprite_export(ind, subimg, fname) {
-	var w = sprite_get_width(ind);
-	var h = sprite_get_height(ind);
+function sprite_export(ind, subimg, fname, scale = 1) {
+	var w = sprite_get_width(ind) * scale;
+	var h = sprite_get_height(ind) * scale;
 	
 	var surface = surface_create(w, h);
 	
 	surface_set_target(surface);
 	
-	var _x = sprite_get_xoffset(ind);
-	var _y = sprite_get_yoffset(ind);
-	draw_sprite(ind, subimg, _x, _y);
+	var _x = sprite_get_xoffset(ind) * scale;
+	var _y = sprite_get_yoffset(ind) * scale;
+	draw_sprite_ext(ind, subimg, _x, _y, scale, scale, 0, c_white, 1);
 	
 	surface_save(surface, fname);
 	

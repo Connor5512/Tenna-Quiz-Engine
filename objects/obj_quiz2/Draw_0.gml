@@ -14,7 +14,7 @@ if current < array_length(questions) {
 		questions[current].text,
 	
 		questions[current].decal
-	)
+	);
 	
 	var limit = 146;
 	if string_width(questions[current].option1) >= 146 {

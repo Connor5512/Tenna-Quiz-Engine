@@ -50,3 +50,21 @@ function string_wrap(_text, _width) {
 	}
 	return _text_wrapped;
 }
+
+function string_numbers(_string) {
+	new_string = "";
+	var digits = ["0","1","2","3","4","5","6","7","8","9"];
+	
+	for (var i = 0; i < string_length(_string); i++) {
+		var char = string_char_at(_string, i+1);
+		if (array_contains(digits, char)) {
+			new_string = string_append(new_string, char);
+		}
+	}
+	
+	return new_string;
+}
+
+function string_contains(str, substr) {
+	return string_replace_all(str, substr, "") != str;
+}

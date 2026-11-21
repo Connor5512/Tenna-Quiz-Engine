@@ -5,6 +5,12 @@ startup = obj_quiz1;
 
 global.quiz_phase = quiz_phases.init;
 
+given = false;
+
+__author = "";
+bank_name = "";
+questions = {};
+
 enum quiz_phases {
 	init,
 	answer,

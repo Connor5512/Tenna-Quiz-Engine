@@ -36,4 +36,4 @@ setup = false;
 
 openerID = 0;
 
-show_debug_message("Textbox created - " + string(id));
+debug_message(object_index, id, "Textbox created - " + string(id));

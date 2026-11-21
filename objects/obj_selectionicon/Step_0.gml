@@ -15,7 +15,7 @@ if room == room_menu {
 			audio_play_sound(snd_menumove, 10, false);
 		}
 		
-		selection = clamp(selection, 0, obj_menus.quizes);
+		selection = clamp(selection, 0, obj_menus.quizes + 1);
 		
 		var start_y = 33;
 		var gap = 14;
@@ -29,7 +29,11 @@ if room == room_menu {
 				var st = instance_create_layer(0, 0, "Instances", obj_quiz_startup);
 				st.startup = global.quizes[selection];
 			} else {
-				game_end();
+				if selection == obj_menus.quizes {
+					room_goto(room_quiz_creator);
+				} else {
+					game_end();
+				}
 			}
 		}
 	} else if obj_menus.page == menu_pages.options {

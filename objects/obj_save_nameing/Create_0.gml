@@ -41,19 +41,19 @@ function add_letter_from_index(index) {
 		if !(string_length(typedName) == max_letters) {
 			newLetter = chr(ord("A") + index);
 			typedName = string_insert(newLetter, typedName, (string_length(typedName) + 1))
-			show_debug_message("Name - " + typedName);
+			//show_debug_message("Name - " + typedName);
 		} else {
-			show_debug_message("Maximum name length reached!");
+			debug_message(object_index, id, "Maximum name length reached!");
 		}
 	} else if index == name_letters.BACK {
 		if string_length(typedName) >= 1 {
 			typedName = string_copy(typedName, 1, (string_length(typedName) - 1));
-			show_debug_message("Name - " + typedName);
+			//show_debug_message("Name - " + typedName);
 		}
 	} else if index == name_letters.END {
 		if (string_length(typedName) > 0) {
 			audio_stop_all();
-			show_debug_message("Name confirmed.");
+			debug_message(object_index, id, "Name confirmed.");
 			ini_open("player.ini");
 			ini_write_string("NICKNAMES", "P" + string(obj_nicknames.selected_player), typedName)
 			instance_destroy();
