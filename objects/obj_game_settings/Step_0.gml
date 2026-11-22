@@ -7,7 +7,7 @@ ini_write_string("LANG", "LANG", "en");
 ini_close();
 
 //fullscreen
-if keyboard_check_pressed(vk_f4) {
+if keyboard_check_pressed(vk_f4) && !(instance_exists(obj_game_fullscreen_restrictor)) {
 	if window_get_fullscreen() {
 		window_set_fullscreen(false)
 	} else {

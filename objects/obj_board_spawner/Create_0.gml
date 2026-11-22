@@ -1,2 +1,0 @@
-object = noone;
-spawned = false;

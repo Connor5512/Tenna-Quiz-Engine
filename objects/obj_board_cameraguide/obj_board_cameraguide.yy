@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_board_cameraguide",
-    "path":"sprites/spr_board_cameraguide/spr_board_cameraguide.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":false,
 }

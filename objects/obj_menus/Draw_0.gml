@@ -2,6 +2,7 @@ draw_set_font(fnt_8bit);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_yellow);
+draw_set_alpha(1);
 if page == menu_pages.home {
 	var start = 30;
 	var gap = 14;
