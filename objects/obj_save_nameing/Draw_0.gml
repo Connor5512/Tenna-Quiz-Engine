@@ -1,3 +1,5 @@
+draw_set_alpha(1);
+
 draw_sprite_ext(spr_save_nametext, image_index, x, y, 1, 1, 0, c_white, 1);
 
 //draw the text
