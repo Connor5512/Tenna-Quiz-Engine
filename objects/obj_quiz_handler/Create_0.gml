@@ -5,3 +5,5 @@ enum quiz_modes {
 	import,
 	export_creator
 }
+
+startup = "";

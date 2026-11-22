@@ -16,6 +16,18 @@ if state == quiz_creator_button_states.normal {
 		keyboard_string = text;
 	}
 } else if state == quiz_creator_button_states.clicked {
+	if option == quiz_details._title {
+		keyboard_string = string_replace_all(keyboard_string, "<", "");
+		keyboard_string = string_replace_all(keyboard_string, ">", "");
+		keyboard_string = string_replace_all(keyboard_string, ":", "");
+		keyboard_string = string_replace_all(keyboard_string, "\"", "");
+		keyboard_string = string_replace_all(keyboard_string, "/", "");
+		keyboard_string = string_replace_all(keyboard_string, "\\", "");
+		keyboard_string = string_replace_all(keyboard_string, "|", "");
+		keyboard_string = string_replace_all(keyboard_string, "?", "");
+		keyboard_string = string_replace_all(keyboard_string, "<*", "");
+	}
+	
 	text = keyboard_string;
 	
 	if !(cursor_hovering(id)) && (mouse_check_button_pressed(mb_left)) {

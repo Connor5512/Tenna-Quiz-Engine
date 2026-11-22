@@ -30,12 +30,14 @@
     {"name":"inst_220C39D7","path":"rooms/room_quiz_creator/room_quiz_creator.yy",},
     {"name":"author","path":"rooms/room_quiz_creator/room_quiz_creator.yy",},
     {"name":"title","path":"rooms/room_quiz_creator/room_quiz_creator.yy",},
+    {"name":"inst_B3F7FF5","path":"rooms/room_quiz_creator/room_quiz_creator.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Instances_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"author","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"author","objectId":{"name":"obj_quizmaker_details","path":"objects/obj_quizmaker_details/obj_quizmaker_details.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":54.0,"scaleY":14.0,"x":129.0,"y":182.0,},
         {"$GMRInstance":"v4","%Name":"title","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"title","objectId":{"name":"obj_quizmaker_details","path":"objects/obj_quizmaker_details/obj_quizmaker_details.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":54.0,"scaleY":14.0,"x":161.0,"y":170.0,},
+        {"$GMRInstance":"v4","%Name":"inst_B3F7FF5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_B3F7FF5","objectId":{"name":"obj_quizmaker_export","path":"objects/obj_quizmaker_export/obj_quizmaker_export.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":6.0,"y":192.0,},
       ],"layers":[],"name":"Instances_1","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Text","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_36C5A0DB","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":true,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_36C5A0DB","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_quiz_podium","path":"sprites/spr_quiz_podium/spr_quiz_podium.yy",},"x":32.0,"y":166.0,},

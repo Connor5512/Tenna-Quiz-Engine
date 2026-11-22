@@ -15,7 +15,7 @@ if room == room_menu {
 			audio_play_sound(snd_menumove, 10, false);
 		}
 		
-		selection = clamp(selection, 0, obj_menus.quizes + 1);
+		selection = clamp(selection, 0, obj_menus.quizes + 2);
 		
 		var start_y = 33;
 		var gap = 14;
@@ -25,11 +25,70 @@ if room == room_menu {
 			audio_play_sound(snd_select, 10, false);
 			if selection < obj_menus.quizes {
 				global.quiz_phase = quiz_phases.init;
-				room_goto(room_quiz);
-				var st = instance_create_layer(0, 0, "Instances", obj_quiz_startup);
-				st.startup = global.quizes[selection];
+				var st = instance_create_layer(0, 0, "Instances", obj_quiz_handler);
+				st.startup = global.quizes[selection].path;
+				st.mode = quiz_modes.import;
 			} else {
 				if selection == obj_menus.quizes {
+					var filepath = get_open_filename("Tenna Quiz Files (*.quiz)|*.quiz", "");
+					
+					if filepath == "" {
+						debug_message(object_index, id, "File import canceled by user.");
+						exit;
+					}
+					
+					var copy_directory = "imports/";
+					
+					var newpath = copy_directory + filename_name(filepath);
+					file_copy(filepath, newpath);
+					
+					directory_destroy("temp/unzip/")
+					zip_unzip(newpath, "temp/unzip/");
+					
+					var properties = load_json("temp/unzip/quiz_properties.json")
+					var __author = properties.__author;
+					var bank_name = properties.bank_name;
+					
+					var buffer = buffer_load("temp/unzip/questions.json");
+					var json = buffer_read(buffer, buffer_text);
+					buffer_delete(buffer);
+	
+					var data = json_decode(json);
+					var ds_keys = ds_map_keys_to_array(data);
+					//debug_message(object_index, id, ds_keys);
+	
+					for (var i = 0; i < array_length(ds_keys); i++) {
+						var json_questions = ds_map_find_value(data, "questions");
+						var reconstructed_questions = [];
+
+						for (var j = 0; j < ds_list_size(json_questions); j++) {
+							var question = ds_list_find_value(json_questions, j);
+				
+							array_push(reconstructed_questions, {
+								text: ds_map_find_value(question, "text"),
+								option1: ds_map_find_value(question, "option1"),
+								option2: ds_map_find_value(question, "option2"),
+								option3: ds_map_find_value(question, "option3"),
+								option4: ds_map_find_value(question, "option4"),
+								correct: ds_map_find_value(question, "correct"),
+								decal: ds_map_find_value(question, "decal")
+							});
+						}
+
+						questions = reconstructed_questions;
+					}
+					
+					directory_destroy("temp/unzip/");
+					
+					array_push(global.quizes, 
+						{
+							path: newpath,
+							bank_name: bank_name,
+							__author: __author,
+							questions: array_length(questions)
+						}
+					);
+				} else if selection == obj_menus.quizes + 1 {
 					room_goto(room_quiz_creator);
 				} else {
 					game_end();

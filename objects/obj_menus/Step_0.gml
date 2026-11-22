@@ -1,0 +1,1 @@
+quizes = array_length(global.quizes);

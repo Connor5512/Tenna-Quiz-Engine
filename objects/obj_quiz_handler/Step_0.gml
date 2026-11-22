@@ -57,19 +57,21 @@ if mode == quiz_modes.export {
 	
 	debug_message(object_index, id, "File saved to path " + string(name));
 } else if mode == quiz_modes.import {
-	var file = get_open_filename("Tenna Quiz Files (*.quiz)|*.quiz", "");
+	var file = startup;
+	debug_message(object_index, id, "Importing file: " + file);
+	//var file = get_open_filename("Tenna Quiz Files (*.quiz)|*.quiz", "");
 	
-	if file == "" {
-		debug_message(object_index, id, "File import canceled by user.");
-		instance_destroy();
-		exit;
-	}
+	//if file == "" {
+	//	debug_message(object_index, id, "File import canceled by user.");
+	//	instance_destroy();
+	//	exit;
+	//}
 	
-	if filename_ext(file) != ".quiz" {
-		debug_message(object_index, id, "File import canceled; invalid file extension.");
-		instance_destroy();
-		exit;
-	}
+	//if filename_ext(file) != ".quiz" {
+	//	debug_message(object_index, id, "File import canceled; invalid file extension.");
+	//	instance_destroy();
+	//	exit;
+	//}
 	
 	var temp_dir = "temp/import/";
 	directory_destroy(temp_dir);
@@ -79,8 +81,6 @@ if mode == quiz_modes.export {
 	
 	var __author = properties.__author;
 	var bank_name = properties.bank_name;
-	
-	
 	
 	var buffer = buffer_load(temp_dir + "questions.json");
 	var json = buffer_read(buffer, buffer_text);
@@ -135,7 +135,7 @@ if mode == quiz_modes.export {
 	name = temp_string;
 	
 	if name == "" {
-		debug_message(object_index, id, "File export canceled.", log_types.warn);
+		debug_message(object_index, id, "File export canceled.");
 		instance_destroy();
 		exit;
 	}

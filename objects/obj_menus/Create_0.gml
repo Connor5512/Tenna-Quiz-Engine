@@ -1,4 +1,4 @@
-instance_create_layer(40, 36, "Instances", obj_selectionicon);
+instance_create_layer(24, 36, "Instances", obj_selectionicon);
 susie_x = 0;
 kris_x = 0;
 ralsei_x = 0;

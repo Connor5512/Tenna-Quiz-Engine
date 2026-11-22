@@ -47,7 +47,9 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"vanilla-questions.quiz","CopyToMask":-1,"filePath":"datafiles","name":"vanilla-questions.quiz","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -128,6 +130,7 @@
     {"id":{"name":"obj_quizmaker_decal_y","path":"objects/obj_quizmaker_decal_y/obj_quizmaker_decal_y.yy",},},
     {"id":{"name":"obj_quizmaker_decal","path":"objects/obj_quizmaker_decal/obj_quizmaker_decal.yy",},},
     {"id":{"name":"obj_quizmaker_details","path":"objects/obj_quizmaker_details/obj_quizmaker_details.yy",},},
+    {"id":{"name":"obj_quizmaker_export","path":"objects/obj_quizmaker_export/obj_quizmaker_export.yy",},},
     {"id":{"name":"obj_quizmaker_question_add","path":"objects/obj_quizmaker_question_add/obj_quizmaker_question_add.yy",},},
     {"id":{"name":"obj_quizmaker_question_next","path":"objects/obj_quizmaker_question_next/obj_quizmaker_question_next.yy",},},
     {"id":{"name":"obj_quizmaker_question_previous","path":"objects/obj_quizmaker_question_previous/obj_quizmaker_question_previous.yy",},},
@@ -283,6 +286,7 @@
     {"id":{"name":"spr_quiz_tv","path":"sprites/spr_quiz_tv/spr_quiz_tv.yy",},},
     {"id":{"name":"spr_quizmaker_arrow_next","path":"sprites/spr_quizmaker_arrow_next/spr_quizmaker_arrow_next.yy",},},
     {"id":{"name":"spr_quizmaker_arrow_previous","path":"sprites/spr_quizmaker_arrow_previous/spr_quizmaker_arrow_previous.yy",},},
+    {"id":{"name":"spr_quizmaker_export","path":"sprites/spr_quizmaker_export/spr_quizmaker_export.yy",},},
     {"id":{"name":"spr_quizmaker_questions","path":"sprites/spr_quizmaker_questions/spr_quizmaker_questions.yy",},},
     {"id":{"name":"spr_ralsei_board_block","path":"sprites/spr_ralsei_board_block/spr_ralsei_board_block.yy",},},
     {"id":{"name":"spr_ralsei_board_down","path":"sprites/spr_ralsei_board_down/spr_ralsei_board_down.yy",},},

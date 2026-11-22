@@ -34,4 +34,50 @@ if room == room_quiz {
 			global.answers[i] = overlay;
 		}
 	}
+} else if room == room_menu {
+	var __x = 252;
+	var __y = 60;
+	
+	var text = "";
+	if selection < obj_menus.quizes {
+		text =	global.quizes[selection].bank_name;
+	} else {
+		text =	"N/A" + "\n"
+	}
+	draw_set_color(c_black);
+	draw_set_font(fnt_8bit);
+	draw_set_halign(fa_center);
+	
+	var limit = 82;
+	if string_width(text) >= limit {
+		text_scale = ((limit-2)/string_width(text));
+	} else {
+		text_scale = 1;
+	}
+	draw_text_transformed(__x, __y, text, text_scale, 1, 0);
+	
+	if selection < obj_menus.quizes {
+		text =	"\n" +
+				"By " + global.quizes[selection].__author;
+	} else {
+		text =	"\n" +
+				"By " + "N/A";
+	}
+	
+	if string_width(text) >= limit {
+		text_scale = ((limit-2)/string_width(text));
+	} else {
+		text_scale = 1;
+	}
+	draw_text_transformed(__x, __y, text, text_scale, 1, 0);
+	
+	if selection < obj_menus.quizes {
+		text =	"\n\n\n" + string(global.quizes[selection].questions) + "\nquestions";
+	} else {
+		text =	"\n\n\n" + "N/A" + "\nquestions";
+	}
+	draw_text(__x, __y, text);
+	
+	draw_set_colour(c_white);
+	draw_set_halign(fa_left);
 }
